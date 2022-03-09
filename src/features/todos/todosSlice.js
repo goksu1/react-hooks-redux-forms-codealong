@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+
 const todosSlice = createSlice({
   name: "todos",
   initialState: {
@@ -7,7 +8,7 @@ const todosSlice = createSlice({
   },
   reducers: {
     todoAdded(state, action) {
-      // update meeee
+        state.entities.push(action.payload);
     },
   },
 });
